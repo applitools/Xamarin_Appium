@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Eyes.Images</name>
+    </assembly>
+    <members>
+        <member name="T:Applitools.Images.Eyes">
+            <summary>
+            Applitools Eyes Image validation API.
+            </summary>
+        </member>
+        <member name="M:Applitools.Images.Eyes.#ctor(System.Uri)">
+            <summary>
+            Creates a new Eyes instance that interacts with the Eyes Server at the 
+            specified url.
+            </summary>
+            <param name="serverUrl">The Eyes server URL.</param>
+        </member>
+        <member name="M:Applitools.Images.Eyes.#ctor">
+            <summary>
+            Creates a new Eyes instance that interacts with the Eyes cloud service.
+            </summary>
+        </member>
+        <member name="M:Applitools.Images.Eyes.Open(System.String,System.String,System.Drawing.Size)">
+            <summary>
+            Starts a test.
+            </summary>
+            <param name="appName">The name of the application under test.</param>
+            <param name="testName">The test name.</param>
+            <param name="viewportSize">The application's viewport size or <c>Size.Empty</c> to 
+            infer the viewport size from the first checked image</param>
+        </member>
+        <member name="M:Applitools.Images.Eyes.Open(System.String,System.String)">
+            <summary>
+            Starts a new test that does not dictate a viewport size.
+            </summary>
+        </member>
+        <member name="M:Applitools.Images.Eyes.CheckImage(System.Drawing.Bitmap,System.String,System.Boolean)">
+            <summary>
+            Matches the input bitmap with the next expected image.
+            </summary>
+        </member>
+        <member name="M:Applitools.Images.Eyes.CheckImage(System.String,System.String,System.Boolean)">
+            <summary>
+            Matches the input base64 encoded image with the next expected image.
+            </summary>
+        </member>
+        <member name="M:Applitools.Images.Eyes.CheckImageFile(System.String,System.String,System.Boolean)">
+            <summary>
+            Matches the image stored in the input file with the next expected image.
+            </summary>
+        </member>
+        <member name="M:Applitools.Images.Eyes.CheckImage(System.Byte[],System.String,System.Boolean)">
+            <summary>
+            Matches the input image with the next expected image.
+            </summary>
+        </member>
+        <member name="M:Applitools.Images.Eyes.CheckImageAtUrl(System.String,System.String,System.Boolean)">
+            <summary>
+            Matches the image stored in the input file with the next expected image.
+            </summary>
+        </member>
+        <member name="M:Applitools.Images.Eyes.InRegion(System.Drawing.Rectangle)">
+            <summary>
+            Specifies a region of the current application window.
+            </summary>
+        </member>
+    </members>
+</doc>
