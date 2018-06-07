@@ -35,7 +35,7 @@ namespace TestXamarinAppium
 
             // Initialize the eyes SDK and set your private API key.
             eyes = new Eyes();
-            //eyes.ApiKey = "ioRRQOF5YBYU6NIwbe3tuDFCX8H109mmenarZo8arSlbA110";
+           
             eyes.ApiKey = Environment.GetEnvironmentVariable("APPLITOOLS_API_KEY");
 
             //Hides the scroll bar
@@ -47,10 +47,6 @@ namespace TestXamarinAppium
 
             //Creat a batch to group all the tests together
             eyes.Batch = mybatch;
-
-            // We remove the header automatically for some devices, sometimes there are a few extra pixels that are needed to be removed
-            //FixedCutProvider provider = new FixedCutProvider(7, 0, 0, 0);
-            //eyes.CutProvider = provider;
 
             //using OpenQA.Selenium.Remote
             //Setup appium - Ensure the capabilities meets your environment.
