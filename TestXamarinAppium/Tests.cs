@@ -45,7 +45,7 @@ namespace TestXamarinAppium
             //when taking a full page screenshot use css stitching to handle fixed positoin elements like headers/floating bars
             eyes.StitchMode = StitchModes.CSS;
 
-            //Creat a batch to group all the tests together
+            //Create a batch to group all the tests together
             eyes.Batch = mybatch;
 
             //using OpenQA.Selenium.Remote
