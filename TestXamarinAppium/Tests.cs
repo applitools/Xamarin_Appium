@@ -22,7 +22,7 @@ namespace TestXamarinAppium
         Eyes eyes;
         //Declaring the RemoteWebDriver object
         RemoteWebDriver driver;
-        //Creating a BatchInfo object to group all the tests together ender the same batch
+        //Creating a BatchInfo object to group all the tests together under the same batch
         BatchInfo mybatch = new BatchInfo("Xamarin");
         //Using the same test name to create a bug in the TestWithDiff method
         string TestName = "Test_Appium";
